@@ -26,5 +26,13 @@ class Program
         einstein.Name = "Albert Einstein";
         einstein.Phone = "415-738-4935";
         einstein.Address = "3718 MLK Blvd. Oakland, CA 94609";
+
+        List<Contact> AddressBook = new List<Contact>() { hendrix, elvis, einstein };
+        foreach (Contact person in AddressBook)
+        {
+            Console.WriteLine("Name: " + person.Name);
+            Console.WriteLine("Phone number: " + person.Phone);
+            Console.WriteLine("Address: " + person.Address);
+        }
     }
 }
